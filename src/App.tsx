@@ -1,5 +1,7 @@
 import React from 'react'
 import { Layout } from './components/Layout'
+import Button from './components/Button'
+import InputUnit from './components/InputUnit'
 
 function App() {
   const data = [
@@ -8,7 +10,9 @@ function App() {
       title: "Fantastic Gains and Where to Find Them: On the Existence and Prospect of General Knowledge Transfer between Any Pretrained Model",
       published: "2021-06-01",
       entry_id: "http://arxiv.org/abs/2310.17653v1",
-      abstract: "Training deep networks requires various design decisions regarding for\ninstance their architecture, data augmentation, or optimization. In this work,\nwe find these training variations to result in networks learning unique feature\nsets from the data. Using public model libraries comprising thousands of models\ntrained on canonical datasets like ImageNet, we observe that for arbitrary\npairings of pretrained models, one model extracts significant data context\nunavailable in the other -- independent of overall performance. Given any\narbitrary pairing of pretrained models and no external rankings (such as\nseparate test sets, e.g. due to data privacy), we investigate if it is possible\nto transfer such \"complementary\" knowledge from one model to another without\nperformance degradation -- a task made particularly difficult as additional\nknowledge can be contained in stronger, equiperformant or weaker models. Yet\nfacilitating robust transfer in scenarios agnostic to pretrained model pairings\nwould unlock auxiliary gains and knowledge fusion from any model repository\nwithout restrictions on model and problem specifics - including from weaker,\nlower-performance models. This work therefore provides an initial, in-depth\nexploration on the viability of such general-purpose knowledge transfer. Across\nlarge-scale experiments, we first reveal the shortcomings of standard knowledge\ndistillation techniques, and then propose a much more general extension through\ndata partitioning for successful transfer between nearly all pretrained models,\nwhich we show can also be done unsupervised. Finally, we assess both the\nscalability and impact of fundamental model properties on successful\nmodel-agnostic knowledge transfer.",
+      purpose: "mokuteki wo kokode syuturyoku",
+      method: "houhou wo kokode syuturyoku",
+      novelty: "sinnkisei wo kokode syutusyoku",
     },
     {
       id: 2,
@@ -22,12 +26,47 @@ function App() {
 
   return (
     <Layout>
-      <div className='max-w-6xl mx-auto p-7'>      
+      <div className='max-w-6xl mx-auto p-7'>
+        <div className='bg-white p-6 rounded shadow my-8 px-8 py-4'>
+          <form action="" className='flex flex-col'>
+            <div className='flex flex-row justify-between'>
+              <InputUnit containerClassName='flex flex-col' labelName='Key word' type="text" placeholder='Key word'/>
+              <div className='flex flex-col'>
+                <label className='pb-2 px-2'>Category</label>
+                <select name="" id="" className='text-gray-600 shadow border py-2 px-2 rounded focus:outline-none'>
+                  <option value="">All</option>
+                  <option value="">Category 1</option>
+                  <option value="">Category 2</option>
+                  <option value="">Category 3</option>
+                </select>
+              </div>
+              <div className='flex flex-col'>
+                <label className='pb-2 px-2'>Number</label>
+                <select name="" id="" className='text-gray-600 shadow border py-2 px-2 rounded focus:outline-none'>
+                  <option value="">5</option>
+                  <option value="">10</option>
+                  <option value="">20</option>
+                </select>
+              </div>
+              <div className='flex flex-col'>
+                <label className='pb-2 px-2'>Language</label>
+                <select name="" id="" className='text-gray-600 shadow border py-2 px-2 rounded focus:outline-none'>
+                  <option value="">English</option>
+                  <option value="">Japanese</option>
+                </select>
+              </div>
+            </div>
+            <Button className='mt-8 mb-4'>Search</Button>
+          </form>
+        </div>
+        <h1 className='text-xl text-slate-800 font-bold px-2'>検索結果</h1>
         {data.map((item) => (
           <div key={item.id} className='shadow-sm bg-white rounded my-8 px-8 py-4'>
             <p className='py-4 text-l'>{item.published}</p>
             <a className='py-4 text-lg underline' href={item?.entry_id}>{item.title}</a>
-            <p className='py-4'>{item?.abstract}</p>
+            <p className='py-4'><span className='font-bold text-lg'>Purpose: </span>{item?.purpose}</p>
+            <p className='py-4'><span className='font-bold text-lg'>Method: </span>{item?.method}</p>
+            <p className='py-4'><span className='font-bold text-lg'>Novelty: </span>{item?.novelty}</p>
           </div>
         ))}
       </div>
