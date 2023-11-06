@@ -7,12 +7,12 @@ function App() {
   const data = [
     {
       id: 1,
-      title: "Fantastic Gains and Where to Find Them: On the Existence and Prospect of General Knowledge Transfer between Any Pretrained Model",
-      published: "2021-06-01",
-      entry_id: "http://arxiv.org/abs/2310.17653v1",
-      purpose: "mokuteki wo kokode syuturyoku",
-      method: "houhou wo kokode syuturyoku",
-      novelty: "sinnkisei wo kokode syutusyoku",
+      title: "Conversational Challenges in AI-Powered Data Science: Obstacles, Needs, and Design Opportunities",
+      published: "2021-xx-xx",
+      entry_id: "http://arxiv.org/abs/2310.16164v1",
+      purpose: "To identify issues in data processing and analysis using large-scale language models (LLMs) where data scientists are having difficulty accepting conversations with and answering chatbots with LLMs.",
+      method: "A mixed-methods study including field observations, semi-structured interviews (n = 14), and surveys (n = 114) will be conducted to identify these issues.",
+      novelty: "The key problems faced by data scientists, such as acquiring contextual data, creating prompts for complex tasks, adapting the generated code to theadapting to the local environment, and iteratively improving the prompts, and provide specific design suggestions such as data brushing.He also offers suggestions such as questioning feedback loops to improve communication with AI-based assistants.",
     },
     {
       id: 2,
