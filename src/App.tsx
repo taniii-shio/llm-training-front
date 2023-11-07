@@ -19,7 +19,7 @@ function App() {
   const [data, setData] = React.useState<Data[]>([]);
   const [keyword, setKeyword] = React.useState("");
   const [category, setCategory] = React.useState("all");
-  const [number, setNumber] = React.useState(5);
+  const [number, setNumber] = React.useState(3);
   const [language, setLanguage] = React.useState(0);
 
   const handleKeywordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -130,6 +130,7 @@ function App() {
                   id=""
                   className="text-gray-600 shadow border py-2 px-2 rounded focus:outline-none"
                 >
+                  <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
                   <option value="20">20</option>
