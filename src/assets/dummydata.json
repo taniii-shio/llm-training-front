@@ -1,0 +1,72 @@
+[
+  {
+    "published": "2023-10-26",
+    "title": "DIVI: Dynamically Interactive Visualization",
+    "primary_category": "cs.HC",
+    "url": "http://arxiv.org/abs/2310.17814v2",
+    "abstract": "Dynamically Interactive Visualization (DIVI) is a novel approach for\norchestrating interactions within and across static visualizations. DIVI\ndeconstructs Scalable Vector Graphics charts at runtime to infer content and\ncoordinate user input, decoupling interaction from specification logic. This\ndecoupling allows interactions to extend and compose freely across different\ntools, chart types, and analysis goals. DIVI exploits positional relations of\nmarks to detect chart components such as axes and legends, reconstruct scales\nand view encodings, and infer data fields. DIVI then enumerates candidate\ntransformations across inferred data to perform linking between views. To\nsupport dynamic interaction without prior specification, we introduce a\ntaxonomy that formalizes the space of standard interactions by chart element,\ninteraction type, and input event. We demonstrate DIVI's usefulness for rapid\ndata exploration and analysis through a usability study with 13 participants\nand a diverse gallery of dynamically interactive visualizations, including\nsingle chart, multi-view, and cross-tool configurations."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "A Spectral Condition for Feature Learning",
+    "primary_category": "cs.LG",
+    "url": "http://arxiv.org/abs/2310.17813v1",
+    "abstract": "The push to train ever larger neural networks has motivated the study of\ninitialization and training at large network width. A key challenge is to scale\ntraining so that a network's internal representations evolve nontrivially at\nall widths, a process known as feature learning. Here, we show that feature\nlearning is achieved by scaling the spectral norm of weight matrices and their\nupdates like $\\sqrt{\\texttt{fan-out}/\\texttt{fan-in}}$, in contrast to widely\nused but heuristic scalings based on Frobenius norm and entry size. Our\nspectral scaling analysis also leads to an elementary derivation of\n\\emph{maximal update parametrization}. All in all, we aim to provide the reader\nwith a solid conceptual understanding of feature learning in neural networks."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Style-Aware Radiology Report Generation with RadGraph and Few-Shot Prompting",
+    "primary_category": "cs.AI",
+    "url": "http://arxiv.org/abs/2310.17811v2",
+    "abstract": "Automatically generated reports from medical images promise to improve the\nworkflow of radiologists. Existing methods consider an image-to-report modeling\ntask by directly generating a fully-fledged report from an image. However, this\nconflates the content of the report (e.g., findings and their attributes) with\nits style (e.g., format and choice of words), which can lead to clinically\ninaccurate reports. To address this, we propose a two-step approach for\nradiology report generation. First, we extract the content from an image; then,\nwe verbalize the extracted content into a report that matches the style of a\nspecific radiologist. For this, we leverage RadGraph -- a graph representation\nof reports -- together with large language models (LLMs). In our quantitative\nevaluations, we find that our approach leads to beneficial performance. Our\nhuman evaluation with clinical raters highlights that the AI-generated reports\nare indistinguishably tailored to the style of individual radiologist despite\nleveraging only a few examples as context."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Clover: Closed-Loop Verifiable Code Generation",
+    "primary_category": "cs.SE",
+    "url": "http://arxiv.org/abs/2310.17807v1",
+    "abstract": "The use of large language models for code generation is a rapidly growing\ntrend in software development. However, without effective methods for ensuring\nthe correctness of generated code, this trend could lead to any number of\nundesirable outcomes. In this paper, we lay out a vision for addressing this\nchallenge: the Clover paradigm, short for Closed-Loop Verifiable Code\nGeneration, which reduces correctness checking to the more accessible problem\nof consistency checking. At the core of Clover lies a checker that performs\nconsistency checks among code, docstrings, and formal annotations. The checker\nis implemented using a novel integration of formal verification tools and large\nlanguage models. We provide a theoretical analysis to support our thesis that\nClover should be effective at consistency checking. We also empirically\ninvestigate its feasibility on a hand-designed dataset (CloverBench) featuring\nannotated Dafny programs at a textbook level of difficulty. Experimental\nresults show that for this dataset, (i) LLMs are reasonably successful at\nautomatically generating formal specifications; and (ii) our consistency\nchecker achieves a promising acceptance rate (up to 87%) for correct instances\nwhile maintaining zero tolerance for incorrect ones (no false positives)."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Ancillary Services in Power System Transition Toward a 100% Non-Fossil Future: Market Design Challenges in the United States and Europe",
+    "primary_category": "physics.soc-ph",
+    "url": "http://arxiv.org/abs/2311.02090v1",
+    "abstract": "The expansion of variable generation has driven a transition toward a 100\\%\nnon-fossil power system. New system needs are challenging system stability and\nsuggesting the need for a redesign of the ancillary service (AS) markets. This\npaper presents a comprehensive and broad review for industrial practitioners\nand academic researchers regarding the challenges and potential solutions to\naccommodate high shares of variable renewable energy (VRE) generation levels.\nWe detail the main drivers enabling the energy transition and facilitating the\nprovision of ASs. A systematic review of the United States and European AS\nmarkets is conducted. We clearly organize the main ASs in a standard taxonomy,\nidentifying current practices and initiatives to support the increasing VRE\nshare. Furthermore, we envision the future of modern AS markets, proposing\npotential solutions for some remaining fundamental technical and market design\nchallenges."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Reward Scale Robustness for Proximal Policy Optimization via DreamerV3 Tricks",
+    "primary_category": "cs.LG",
+    "url": "http://arxiv.org/abs/2310.17805v1",
+    "abstract": "Most reinforcement learning methods rely heavily on dense, well-normalized\nenvironment rewards. DreamerV3 recently introduced a model-based method with a\nnumber of tricks that mitigate these limitations, achieving state-of-the-art on\na wide range of benchmarks with a single set of hyperparameters. This result\nsparked discussion about the generality of the tricks, since they appear to be\napplicable to other reinforcement learning algorithms. Our work applies\nDreamerV3's tricks to PPO and is the first such empirical study outside of the\noriginal work. Surprisingly, we find that the tricks presented do not transfer\nas general improvements to PPO. We use a high quality PPO reference\nimplementation and present extensive ablation studies totaling over 10,000 A100\nhours on the Arcade Learning Environment and the DeepMind Control Suite. Though\nour experiments demonstrate that these tricks do not generally outperform PPO,\nwe identify cases where they succeed and offer insight into the relationship\nbetween the implementation tricks. In particular, PPO with these tricks\nperforms comparably to PPO on Atari games with reward clipping and\nsignificantly outperforms PPO without reward clipping."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "BlackJack: Secure machine learning on IoT devices through hardware-based shuffling",
+    "primary_category": "cs.CR",
+    "url": "http://arxiv.org/abs/2310.17804v1",
+    "abstract": "Neural networks are seeing increased use in diverse Internet of Things (IoT)\napplications such as healthcare, smart homes and industrial monitoring. Their\nwidespread use makes neural networks a lucrative target for theft. An attacker\ncan obtain a model without having access to the training data or incurring the\ncost of training. Also, networks trained using private data (e.g., medical\nrecords) can reveal information about this data. Networks can be stolen by\nleveraging side channels such as power traces of the IoT device when it is\nrunning the network. Existing attacks require operations to occur in the same\norder each time; an attacker must collect and analyze several traces of the\ndevice to steal the network. Therefore, to prevent this type of attack, we\nrandomly shuffle the order of operations each time. With shuffling, each\noperation can now happen at many different points in each execution, making the\nattack intractable. However, we show that shuffling in software can leak\ninformation which can be used to subvert this solution. Therefore, to perform\nsecure shuffling and reduce latency, we present BlackJack, hardware added as a\nfunctional unit within the CPU. BlackJack secures neural networks on IoT\ndevices by increasing the time needed for an attack to centuries, while adding\njust 2.46% area, 3.28% power and 0.56% latency overhead on an ARM M0+ SoC."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Unscrambling the Rectification of Adversarial Attacks Transferability across Computer Networks",
+    "primary_category": "cs.CR",
+    "url": "http://arxiv.org/abs/2311.03373v1",
+    "abstract": "Convolutional neural networks (CNNs) models play a vital role in achieving\nstate-of-the-art performances in various technological fields. CNNs are not\nlimited to Natural Language Processing (NLP) or Computer Vision (CV) but also\nhave substantial applications in other technological domains, particularly in\ncybersecurity. The reliability of CNN's models can be compromised because of\ntheir susceptibility to adversarial attacks, which can be generated\neffortlessly, easily applied, and transferred in real-world scenarios.\n  In this paper, we present a novel and comprehensive method to improve the\nstrength of attacks and assess the transferability of adversarial examples in\nCNNs when such strength changes, as well as whether the transferability\nproperty issue exists in computer network applications. In the context of our\nstudy, we initially examined six distinct modes of attack: the Carlini and\nWagner (C&W), Fast Gradient Sign Method (FGSM), Iterative Fast Gradient Sign\nMethod (I-FGSM), Jacobian-based Saliency Map (JSMA), Limited-memory Broyden\nfletcher Goldfarb Shanno (L-BFGS), and Projected Gradient Descent (PGD) attack.\nWe applied these attack techniques on two popular datasets: the CIC and UNSW\ndatasets. The outcomes of our experiment demonstrate that an improvement in\ntransferability occurs in the targeted scenarios for FGSM, JSMA, LBFGS, and\nother attacks. Our findings further indicate that the threats to security posed\nby adversarial examples, even in computer network applications, necessitate the\ndevelopment of novel defense mechanisms to enhance the security of DL-based\ntechniques."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "TIMELINE: Exhaustive Annotation of Temporal Relations Supporting the Automatic Ordering of Events in News Articles",
+    "primary_category": "cs.CL",
+    "url": "http://arxiv.org/abs/2310.17802v1",
+    "abstract": "Temporal relation extraction models have thus far been hindered by a number\nof issues in existing temporal relation-annotated news datasets, including: (1)\nlow inter-annotator agreement due to the lack of specificity of their\nannotation guidelines in terms of what counts as a temporal relation; (2) the\nexclusion of long-distance relations within a given document (those spanning\nacross different paragraphs); and (3) the exclusion of events that are not\ncentred on verbs. This paper aims to alleviate these issues by presenting a new\nannotation scheme that clearly defines the criteria based on which temporal\nrelations should be annotated. Additionally, the scheme includes events even if\nthey are not expressed as verbs (e.g., nominalised events). Furthermore, we\npropose a method for annotating all temporal relations -- including\nlong-distance ones -- which automates the process, hence reducing time and\nmanual effort on the part of annotators. The result is a new dataset, the\nTIMELINE corpus, in which improved inter-annotator agreement was obtained, in\ncomparison with previously reported temporal relation datasets. We report the\nresults of training and evaluating baseline temporal relation extraction models\non the new corpus, and compare them with results obtained on the widely used\nMATRES corpus."
+  },
+  {
+    "published": "2023-10-26",
+    "title": "Image Prior and Posterior Conditional Probability Representation for Efficient Damage Assessment",
+    "primary_category": "cs.CV",
+    "url": "http://arxiv.org/abs/2310.17801v1",
+    "abstract": "It is important to quantify Damage Assessment (DA) for Human Assistance and\nDisaster Response (HADR) applications. In this paper, to achieve efficient and\nscalable DA in HADR, an image prior and posterior conditional probability\n(IP2CP) is developed as an effective computational imaging representation.\nEquipped with the IP2CP representation, the matching pre- and post-disaster\nimages are effectively encoded into one image that is then processed using deep\nlearning approaches to determine the damage levels. Two scenarios of crucial\nimportance for the practical use of DA in HADR applications are examined:\npixel-wise semantic segmentation and patch-based contrastive learning-based\nglobal damage classification. Results achieved by IP2CP in both scenarios\ndemonstrate promising performances, showing that our IP2CP-based methods within\nthe deep learning framework can effectively achieve data and computational\nefficiency, which is of utmost importance for the DA in HADR applications."
+  }
+]
